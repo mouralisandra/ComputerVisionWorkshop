@@ -1,14 +1,11 @@
 # Pose Estimation with Flask
-
+>  By **Sandra Mourali**  
+> Final Year Software Engineering Student | INSAT 
+ 
 ## Overview
 
 This project implements a Pose Estimation system using OpenCV and MediaPipe, encapsulated within a Flask web application. It allows users to upload images and receive real-time feedback on whether clapping is detected.
 
-## Author
-
-**Sandra Mourali**  
-Final Year Software Engineering Student  
-INSAT Tunisia  
 
 ## Purpose
 
