@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pose Detection</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <h1 class="text-center ">Upload an Image</h1>
+        <form action="/" method="post" enctype="multipart/form-data" class="text-center">
+            <div class="custom-file mb-3">
+                <input type="file" name="file" accept="image/*" required class="custom-file-input" id="fileInput">
+                <label class="custom-file-label" for="fileInput">Choose file</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Upload</button>
+        </form>
+
+        {% if pose_name %}
+        <div id="result" class="text-center mt-5">
+            <h2 class="text-info">Detected Pose: {{ pose_name }}</h2>
+            <img src="{{ url_for('static', filename='processed_image.jpg') }}" alt="Processed Image" class="img-fluid rounded">
+        </div>
+        {% endif %}
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Update the file input label with the selected file name
+        document.querySelector('#fileInput').addEventListener('change', function() {
+            const fileName = this.files[0].name;
+            const label = this.nextElementSibling;
+            label.innerText = fileName;
+        });
+    </script>
+</body>
+</html>

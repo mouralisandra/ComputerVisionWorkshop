@@ -1,0 +1,52 @@
+body {
+    background-color: #f0f8ff; /* Light pastel blue */
+    color: #333;
+}
+
+h1 {
+    color: #4a92b4; /* Pastel teal */
+}
+
+.btn-primary {
+    background-color: #76c7c0; /* Pastel green */
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #63b5b1; /* Darker pastel green */
+}
+
+#result {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #4a92b4; /* Pastel teal */
+}
+body {
+    background-color: #f0f8ff; /* Light pastel blue */
+    color: #333;
+}
+
+h1 {
+    color: #1c796b; /* Pastel teal */
+}
+
+.btn-primary {
+    background-color: #76c7c0; /* Pastel green */
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #63b5b1; /* Darker pastel green */
+}
+
+#result {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #4a92b4; /* Pastel teal */
+}
+
+img {
+    border-radius: 15px; /* Rounded corners for images */
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+}
